@@ -2,6 +2,10 @@
   "name": "coolarweaveaddress",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev": "bun run prettier && bun run index.ts",
+    "prettier": "prettier --write ."
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -9,6 +13,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "arweave": "^1.15.1"
+    "@anthropic-ai/sdk": "^0.27.3",
+    "arweave": "^1.15.1",
+    "prettier": "^3.3.3"
   }
 }
